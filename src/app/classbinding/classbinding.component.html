@@ -1,0 +1,25 @@
+<!-- <p [style.background-color]="'darkorchid'">
+  Quite something!
+</p>
+<p [style.font-size.em]="'3'">
+  A paragraph at 3em!
+</p>
+
+<p [style.font-size.px]="isImportant ? '30' : '16'">
+  Some text that may be important.
+</p> -->
+
+<!-- É fácil vincular o estilo inline em seus modelos Angular 2. Veja como você ligaria um valor de estilo único, por exemplo: -->
+
+<div [class.myClass]="aplicarClass">Aplicando Class Binding</div>
+<div [style.color]="aplicarStyle?'blue': 'orange'">Blue</div>
+
+<!-- E aqui está como você definiria um valor de estilo dependendo de uma propriedade do componente: -->
+<p [style.background-color]="background">
+  Quite something!
+</p>
+
+<!-- //Ou o objeto pode ser o valor de retorno de um método: -->
+<p [ngStyle]="setarStyle()">
+  You say tomato, I say tomato
+</p>
